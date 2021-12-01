@@ -1,0 +1,40 @@
+$menu-background: #555;
+$menu-text-color: #eee;
+$menu-hover: rgba(61, 213, 243, 0.58);
+$menu-active: rgba(61, 243, 85, 0.35);
+
+.nav {
+  background-color: $menu-background;
+  color: $menu-text-color;
+  .active {
+    background-color: $menu-active;
+    &:hover {
+      background-color: $menu-hover;
+    }
+  }
+  a {
+    color: $menu-text-color;
+    padding: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+
+    &:hover {
+      background-color: $menu-hover;
+      color: $menu-text-color;
+    }
+
+  }
+  h1 {
+    font-size: 25px;
+    padding: 15px;
+    padding-right: 30px;
+  }
+  input{
+    margin: 10px 0px 10px 75px;
+
+  }
+  button{
+    margin:  10px 10px 10px 0px;
+  }
+}
